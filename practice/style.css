@@ -1,6 +1,7 @@
-body{
+*{
     font-family: 'Times New Roman', Times, serif;
-}
+  }    
+  /* *{} is used for styling all the content at the same time  */
 
 h1{
     text-align: center;

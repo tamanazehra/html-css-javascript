@@ -1,23 +1,16 @@
-.headings{
-    color:red;
+body{
+    font-family: 'Times New Roman', Times, serif;
 }
 
-p{
-    color:brown;
+h1{
+    text-align: center;
+    text-transform:capitalize;
 }
 
-button {
-    color:bisque;
-    background-color:green;
+#outer{
+    font-size:25px ;
 }
-
-body {
-    background-color:aquamarine;
+#inner{
+    font-size: 10px;
 }
- 
-#box {
-    background-color:blue;
-    color: antiquewhite;
-}
-
 

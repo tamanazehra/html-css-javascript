@@ -1,0 +1,23 @@
+.headings{
+    color:red;
+}
+
+p{
+    color:brown;
+}
+
+button {
+    color:bisque;
+    background-color:green;
+}
+
+body {
+    background-color:aquamarine;
+}
+ 
+#box {
+    background-color:blue;
+    color: antiquewhite;
+}
+
+

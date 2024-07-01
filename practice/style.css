@@ -13,5 +13,12 @@ h1{
 }
 #inner{
     font-size: 10px;
+    height: normal;
+    width: 500px;
+    /* border-width: 2px;
+    border-style: groove;
+    border-color: brown;  */
+    border: 2px groove brown;
+    text-align: center;
 }
-
+ 

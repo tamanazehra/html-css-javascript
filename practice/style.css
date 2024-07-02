@@ -1,13 +1,17 @@
 h1{
+    border-style: dashed;
+    background-color: blueviolet;
+    margin-bottom: 10%;
+    width: 150px;
     text-align: center;
 }
 
 div{
     height: 100px;
     width: 100px;
-    background-color: green;
-    border-radius: 50%;
+    background-color:pink;
+    border-radius: 25%;
     border-style:dotted;
     text-align: center;
-    padding-top: 15px;
+    padding: 50px;
 }

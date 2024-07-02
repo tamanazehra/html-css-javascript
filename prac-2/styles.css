@@ -1,35 +1,22 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
-}
-.navbar{
-    align-items: center;
-    background-color: #333;
-    padding: 10px;
-    border-radius: 5px;
-}
-.navbar-item{
+*{
+    padding: 0px;
+    margin: 0px;
     color: azure;
-    padding: 10px 20px;
-    border-radius: 5px;
 }
-.navbar-item.logo{
-    align-items: center;
+#navbar{
+    height: 50px;
+    background-color: black;
 }
-.navbar-item.search-bar{
-    align-items: center;
-}
-.navbar-item.search-bar
-input[type="text"]{
-    padding: 5px;
-    border-radius: 3px;
-    border: none;
-    margin-right: 10px;
-}
-.navbar-item.search-bar 
 button{
-    padding: 5px 10px;
     background-color: orange;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
 }
+#logo{
+    color: orange;
+    font-size: 25px;
+}
+a{
+    margin-right: 170px;
+    text-decoration: nonegit status
+    g;
+}
+

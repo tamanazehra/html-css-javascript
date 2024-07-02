@@ -1,24 +1,13 @@
-*{
-    font-family: 'Times New Roman', Times, serif;
-  }    
-  /* *{} is used for styling all the content at the same time  */
-
 h1{
     text-align: center;
-    text-transform:capitalize;
 }
 
-#outer{
-    font-size:25px ;
-}
-#inner{
-    font-size: 10px;
-    height: normal;
-    width: 500px;
-    /* border-width: 2px;
-    border-style: groove;
-    border-color: brown;  */
-    border: 2px groove brown;
+div{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50%;
+    border-style:dotted;
     text-align: center;
+    padding-top: 15px;
 }
- 

@@ -1,0 +1,12 @@
+div{
+    height: 150px;
+    width: 150px;
+    background-color: crimson;
+}
+
+@media(width: 600px){
+    div {
+        background-color: cornsilk;
+    }
+}
+

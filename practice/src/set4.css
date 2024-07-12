@@ -21,3 +21,19 @@ li{
     height: 35px;
     width: 50px ;
 }
+
+#outer{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(194, 209, 209);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inner{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(10, 93, 93);
+}
+

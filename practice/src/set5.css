@@ -15,3 +15,9 @@ div{
         background-color: rgb(202, 12, 174);
     }
 }
+
+@media( min-width: 300px) and (max-width: 600px){
+    div {
+        background-color: rgb(75, 12, 194);
+    }
+}

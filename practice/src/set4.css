@@ -25,7 +25,7 @@ li{
 #outer{
     height: 200px;
     width: 200px;
-    background-color: rgb(194, 209, 209);
+    background-color: darkslategrey;
     display: flex;
     justify-content: center;
     align-items: center;

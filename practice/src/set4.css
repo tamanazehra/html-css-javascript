@@ -1,0 +1,22 @@
+.navbar{
+    height: 35px;
+    background-color: lavender;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(68, 68, 98);
+}
+
+li{
+    list-style-type: none;
+}
+ 
+#logo img{
+    height: 35px;
+    width: 50px ;
+}

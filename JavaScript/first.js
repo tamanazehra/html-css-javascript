@@ -7,6 +7,6 @@ const student = {
     CGPA: 8.2,
     isPass: true,
 };
-
+student ["age"] = student["age"] + 2;
 console.log(student);
 

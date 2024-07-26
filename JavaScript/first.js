@@ -1,12 +1,12 @@
-// learning objects in javascript
+//  creating a const object called "profile" to store information.
 
-const student = {
-    fullName: "Tony Stark",
-    age: 24,
-    address: "3rd street, london",
-    CGPA: 8.2,
-    isPass: true,
-};
-student.age= student.age + 3;
-console.log(student);
+const profile = {
+    username : "@Jhon_Doe",
+    isFollow : true
+    followers : 59000 ,
+    posts : 195,
+    following : 5 ,
+    bio : "Ex-Microsoft,DRDO| Entrepreneur| NewDelhi" ,
+} ;
+console.log(product);
 

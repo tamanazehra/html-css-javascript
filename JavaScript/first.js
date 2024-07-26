@@ -2,7 +2,7 @@
 
 const profile = {
     username : "@Jhon_Doe",
-    isFollow : true ,
+    isFollow : false,
     followers : 59000 ,
     posts : 195,
     following : 5 ,

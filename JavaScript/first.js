@@ -2,11 +2,11 @@
 
 const profile = {
     username : "@Jhon_Doe",
-    isFollow : true
+    isFollow : true ,
     followers : 59000 ,
     posts : 195,
     following : 5 ,
     bio : "Ex-Microsoft,DRDO| Entrepreneur| NewDelhi" ,
 } ;
-console.log(product);
+console.log(profile.followers);
 

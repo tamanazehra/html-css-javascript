@@ -1,13 +1,12 @@
-age= 14;
-FullName= "Jhon Whick";
-address= "5th street ,NewYork"
-x= null;
-y= undefined;
+// learning objects in javascript
 
-console.log(x);
-console.log(y);
-// console.log(address);
+const student = {
+    fullName: "Tony Stark",
+    age: 24,
+    address: "3rd street, london",
+    CGPA: 8.2,
+    isPass: true,
+};
 
-
-
+console.log(student);
 

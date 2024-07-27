@@ -1,12 +1,13 @@
-//  creating a const object called "profile" to store information.
+//  Arithmetic Operators in JavaScript.
 
-const profile = {
-    username : "@Jhon_Doe",
-    isFollow : false,
-    followers : 59000 ,
-    posts : 195,
-    following : 5 ,
-    bio : "Ex-Microsoft,DRDO| Entrepreneur| NewDelhi" ,
-} ;
-console.log(profile.followers);
+let a = 5;
+let b = 3;
+
+console.log("a =" , a, "" ,  "b =" , b);
+console.log("a + b =" , a + b);
+console.log("a - b =" , a - b);
+console.log("a * b =" , a * b);
+console.log("a / b =" , a / b);
+console.log("a % b =" , a % b);
+console.log("a ** b =" , a ** b); //** is used for a^b
 

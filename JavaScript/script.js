@@ -44,3 +44,34 @@ const student = {
 student.fullName = "Riya kapoor"; // updating obj
 student.age = student.age + 1
 
+let x = 4 ;
+let y = 2 ;
+
+                /*Arithmetic operators
+                +, -, /, *, **, %, */
+
+    console.log("x + y =", x + y); 
+    console.log("x - y =", x - y); 
+    console.log("x / y =", x / y); 
+    console.log("x * y =", x * y); 
+    console.log("x ^ y =", x ** y); 
+    console.log("x % y =", x % y); 
+
+                /*Assignment operators
+                =, +=, -=, *=, %=, **=  */
+
+    x += 4;  // x = x + 4
+    console.log(x)
+
+    y -= 2;  // y = y - 2
+    console.log(y)
+
+    x *= 3;  // x = x * 3
+    console.log(x)
+
+
+
+
+
+
+

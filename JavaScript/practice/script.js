@@ -20,6 +20,6 @@
                 console.log("YOUR GRADE IS", grade = "D");    
             }else if(score >= 50 && score <= 59){
                 console.log("YOUR GRADE IS", grade = "E");    
-            }else if(score >= 0 && score <= 49){
-                console.log("YOUR GRADE IS", grade = "FAIL!");    
+            }else {
+                console.log("YOU FAILED!!");    
             }

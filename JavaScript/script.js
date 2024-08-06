@@ -31,3 +31,16 @@ const c = 100;
 console.log(c);  //const: neither can redeclear not update 
 
 
+                //objects in  JS
+
+const student = {
+    fullName :"Riya Sharma",
+    age : 21,
+    cgpa : 5.8,
+    isPass : true,
+    subject :"computer science"
+};
+
+student.fullName = "Riya kapoor"; // updating obj
+student.age = student.age + 1
+

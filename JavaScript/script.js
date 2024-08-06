@@ -44,8 +44,8 @@ const student = {
 student.fullName = "Riya kapoor"; // updating obj
 student.age = student.age + 1
 
-let x = 4 ;
-let y = 2 ;
+ x = 4 ;
+ y = 2 ;
 
                 /*Arithmetic operators
                 +, -, /, *, **, %, */
@@ -69,7 +69,28 @@ let y = 2 ;
     x *= 3;  // x = x * 3
     console.log(x)
 
+                /*Comparison operators
+                ==, !=, ===, !==, >, >=, <, <= */
 
+     console.log("x == y", x == y) ;
+     console.log("x != y", x != y) ;
+     console.log("x === y", x===y) ;
+     console.log("x > y", x > y) ;   
+     
+                /*Logical operators
+                     &&, ||, ! */
+    x = 4;
+    y = 2;
+    let cond1 = x > y;
+    let cond2 = x == 4;
+    console.log("cond1 && cond2", cond1 && cond2);
+
+    let cond3 = x < y;
+    let cond4 = y == 2;
+    console.log("cond3 && cond4", cond3 && cond4);
+
+    let cond5  = x !== y;
+    console.log("!(x !== y)", !(x !== y));
 
 
 

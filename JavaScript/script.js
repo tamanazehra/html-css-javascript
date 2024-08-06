@@ -18,17 +18,17 @@ console.log(isAdult);
 // types of variables
 
 var a = 1;
- console.log(a);  // var: can re deaclear , update  
+ console.log(a);  // var: can re deaclare , update  
 var a = 10;    
 console.log(a);
 
 let b = 2;
-console.log(b);    //let: cannot redeclear  , can update
+console.log(b);    //let: cannot redeclare  , can update
 b = 3;
 console.log(b);
 
 const c = 100;
-console.log(c);  //const: neither can redeclear not update 
+console.log(c);  //const: neither can redeclare not update 
 
 
                 //objects in  JS

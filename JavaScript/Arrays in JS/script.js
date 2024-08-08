@@ -38,4 +38,28 @@
             //    console.log(`avg marks of the class is ${avg}`);
 
 
-                
+                //         // Array Methods
+            
+                // let foodItems = ["potato", "apple", "strawberry", "mango", "cola", "chocolate", "coffee"];
+                //     console.log(foodItems);
+
+                //    foodItems.push("chips");
+                //    console.log(foodItems);
+
+                //    foodItems.pop ();
+                //    console.log(foodItems);
+
+                        // creating  array and altering them using Array Methods
+                        // array : Companies -> "Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"
+
+            let companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+            console.log(companies);
+
+            companies.shift();
+            console.log(companies)                  //deleting 1st item from array
+
+            companies.splice(1, 1, "ola");
+            console.log(companies)                  //replacing uber with ola
+
+            companies.push("amazon");
+            console.log(companies);                 //adding  item to array from end

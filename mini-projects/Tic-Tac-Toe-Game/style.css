@@ -57,17 +57,18 @@
   }
   
   #new-btn {
-    padding: 1rem;
-    font-size: 1.25rem;
-    background-color: #191913;
-    color: #fff;
+    padding: 3rem;
+    font-size: 4rem;
+    background-color: #A2678A;
+    color: #3F2E3E;
     border-radius: 1rem;
     border: none;
   }
   
   #msg {
-    color: #ffffc7;
+    color:  #E19898;
     font-size: 5vmin;
+    background-color: #3F2E3E;
   }
   
   .msg-container {

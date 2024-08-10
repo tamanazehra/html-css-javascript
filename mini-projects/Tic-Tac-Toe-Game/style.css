@@ -66,9 +66,12 @@
   }
   
   #msg {
-    color:  #E19898;
-    font-size: 5vmin;
+    padding: 3rem;
+    font-size: 5rem;
     background-color: #3F2E3E;
+    color: #E19898;
+    border-radius: 1rem;
+    border: none;
   }
   
   .msg-container {

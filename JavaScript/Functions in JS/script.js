@@ -1,84 +1,91 @@
-                                //Functions in JS
+            //                     //Functions in JS
 
-            function myFunction() {
-                console.log("learning JS");
-                console.log("hello there!!");
-                console.log("learning JS");
-                console.log("hello there!!");
-            } 
+            // function myFunction() {
+            //     console.log("learning JS");
+            //     console.log("hello there!!");
+            //     console.log("learning JS");
+            //     console.log("hello there!!");
+            // } 
             
-            myFunction();
-            myFunction();                   //helps to avoid redundency in our code
+            // myFunction();
+            // myFunction();                   //helps to avoid redundency in our code
 
 
-                            // creating a function for sum of 2 numbers
+            //                 // creating a function for sum of 2 numbers
 
-                function sum(x, y) {
-                    console.log(x + y);
-                }
+            //     function sum(x, y) {
+            //         console.log(x + y);
+            //     }
 
-                sum(10, 20);
-                sum(14, 24);
+            //     sum(10, 20);
+            //     sum(14, 24);
 
-                            // creating a function for multiplication of 2 numbers
+            //                 // creating a function for multiplication of 2 numbers
                 
-                function prod(x, y){
-                    console.log(x * y);
-                }
+            //     function prod(x, y){
+            //         console.log(x * y);
+            //     }
 
-                prod(2, 4);
-                prod(3, 7);
+            //     prod(2, 4);
+            //     prod(3, 7);
 
-                                //Arrow function  (compact way of writing functions)
+            //                     //Arrow function  (compact way of writing functions)
 
-                        //sum function
-                const arrowSum = (x, y) => {
-                    console.log(x + y);
-                }
+            //             //sum function
+            //     const arrowSum = (x, y) => {
+            //         console.log(x + y);
+            //     }
 
-                 arrowSum(20, 40);
+            //      arrowSum(20, 40);
 
-                        //mul function
-                const arrowProd = (x, y) => {
-                    console.log(x * y);
-                }
+            //             //mul function
+            //     const arrowProd = (x, y) => {
+            //         console.log(x * y);
+            //     }
 
-                arrowProd(12, 8);
+            //     arrowProd(12, 8);
 
-                            //creating a function using the "function" keyword that takes a string as an argument
-                            //& return the number of vowels in the string
+            //                 //creating a function using the "function" keyword that takes a string as an argument
+            //                 //& return the number of vowels in the string
 
-                            function countVowels(str) {
-                                let count = 0;
+            //                 function countVowels(str) {
+            //                     let count = 0;
                                                               
-                                for (let char of str) {
-                                    if (char === "a" ||
-                                        char === "e" ||
-                                        char === "i" || 
-                                        char === "o" || 
-                                        char === "u" ||
-                                        char === "A" ||
-                                        char === "E" ||
-                                        char === "I" || 
-                                        char === "O" || 
-                                        char === "U" 
-                                    ) {
-                                        count++;
-                                    }
-                                }
+            //                     for (let char of str) {
+            //                         if (char === "a" ||
+            //                             char === "e" ||
+            //                             char === "i" || 
+            //                             char === "o" || 
+            //                             char === "u" ||
+            //                             char === "A" ||
+            //                             char === "E" ||
+            //                             char === "I" || 
+            //                             char === "O" || 
+            //                             char === "U" 
+            //                         ) {
+            //                             count++;
+            //                         }
+            //                     }
 
                                 
-                                return count;
-                            }
+            //                     return count;
+            //                 }
                                
             
-                //Higher order Functions
+            //     //Higher order Functions/Method
 
-                let arr = ["pune", "delhi", "mumbai"];
+            //     let arr = ["pune", "delhi", "mumbai"];
 
-                arr.forEach((val) => {
-                    console.log(val.toUpperCase());
-                });
+            //     arr.forEach((val) => {
+            //         console.log(val.toUpperCase());
+            //     });
 
+            //         //creating an array of numbers, printing the square of each value using the forEach loop
+
+            //     let arr = [1, 2, 3, 4, 5];
+            //     arr.forEach((val) => {
+            //         console.log(val*val);
+            //     });
+            
 
 

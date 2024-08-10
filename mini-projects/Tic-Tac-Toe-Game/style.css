@@ -2,9 +2,19 @@
     margin: 0;
     padding: 0;
   }
+
+  p{
+    padding: 3rem;
+    margin: 2rem;
+    font-size: 3rem;
+    background-color: #A2678A;
+    color: #3F2E3E;
+    border-radius: 1rem;
+    border: none;
+  }
   
   body {
-    background-color: #548687;
+    background-color: #E19898;
     text-align: center;
   }
   
@@ -33,15 +43,15 @@
     border: none;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
     font-size: 8vmin;
-    color: #b0413e;
-    background-color: #ffffc7;
+    color: #E19898;
+    background-color: #3F1D38;
   }
   
   #reset-btn {
-    padding: 1rem;
-    font-size: 1.25rem;
-    background-color: #191913;
-    color: #fff;
+    padding: 3rem;
+    font-size: 3rem;
+    background-color: #A2678A;
+    color: #3F2E3E;
     border-radius: 1rem;
     border: none;
   }

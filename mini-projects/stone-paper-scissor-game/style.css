@@ -1,0 +1,49 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ h1{
+    font-size: 4rem;
+    color:  rgb(65, 30, 54);
+ }
+
+ .options{
+    margin-bottom: 30px;
+ }
+
+ .options button{
+    font-size: 8rem;
+    min-width: 200px;
+    margin: 10px 10px;
+    border-radius: 250px;
+    background-color: rgb(65, 30, 54);
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+ }
+
+ .options button:hover{
+    background-color:  rgb(173, 82, 108);
+ }
+
+#playerDisplay, #compDisplay{
+    font-size: 3rem;
+    color: rgb(65, 30, 54);
+}   
+
+#resultDisplay{
+    font-size: 6rem;
+    margin: 30px 0;
+}
+
+.greenText{
+    color: green;
+}
+
+.redText{
+    color: red;
+}

@@ -15,10 +15,10 @@ let msgContainer = document.querySelector(".msg-container"); //This selects the 
 let msg = document.querySelector("#msg");    //This selects the HTML element with the id #msg, 
                                              //which would contain the actual message text inside msgContainer.
 
-let turnO = true; //playerX, playerO This boolean variable tracks whose turn it is. If true,
+let turnO = true; //This boolean variable tracks whose turn it is. If true,
                   // it’s player O's turn; if false, it’s player X's turn.
 
-let count = 0; //To Track Draw This variable tracks the number of moves made.
+let count = 0; // This variable tracks the number of moves made.
                 // It's used to detect a draw when all 9 moves have been made.
 
 const winPatterns = [     //2D Arrays
@@ -53,7 +53,7 @@ boxes.forEach((box) => {
     count++;                                //count is incremented by 1 to track the number of moves.
 
 
-    let isWinner = checkWinner();         //this fun is called to see if the current move resulted in a win
+    let isWinner = checkWinner();         //this func is called to see if the current move resulted in a win
 
     if (count === 9 && !isWinner) {       //If all 9 moves are made and there is no winner (isWinner is false)
       gameDraw();                          //the gameDraw() function is called to declare a draw.

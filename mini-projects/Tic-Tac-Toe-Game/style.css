@@ -1,5 +1,5 @@
-* {
-    margin: 0;
+* {                 /*resets default value for padding & margin of each element to 0 */
+     margin: 0;        /*It's often used to ensure consistent spacing across different browsers. */
     padding: 0;
   }
 

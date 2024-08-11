@@ -7,15 +7,17 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="msg-container hide">
-      <p id="msg">Winner</p>
-      <button id="new-btn">New Game</button>
+    <div class="msg-container hide">  <!--serves as a container for the msg that will be dis  when the game ends  -->
+      <p id="msg">Winner</p>          
+       <button id="new-btn">New Game</button>   <!-- this button will start a new game. -->
     </div>
     <main>
       <h1>TIC-TAC-TOE</h1>
       <div class="container">
         <div class="game">
-          <button class="box"></button>
+          <!-- These are the 9 buttons that make up the Tic-Tac-Toe grid.
+           Each button is given the class box. These buttons will be clicked to mark an "X" or "O" during gameplay. -->
+          <button class="box"></button>    
           <button class="box"></button>
           <button class="box"></button>
           <button class="box"></button>
@@ -26,7 +28,7 @@
           <button class="box"></button>
         </div>
       </div>
-      <button id="reset-btn">Reset Game</button>
+      <button id="reset-btn">Reset Game</button>   <!--This is a reset button-->
     </main>
     <script src="script.js"></script>
   </body>

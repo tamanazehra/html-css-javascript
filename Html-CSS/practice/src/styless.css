@@ -1,0 +1,42 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    color: azure;
+    margin-bottom: 20px;
+}
+#navbar{
+    height: 50px;
+    background-color: black;
+}
+button{
+    background-color: orange;
+}
+#logo{
+    color: orange;
+    font-size: 25px;
+}
+a{
+    margin-right: 170px;
+    text-decoration: none;
+}
+#box1{
+    background-color: RGBA(255,0,0,0.5) ;
+    height: 150px;
+    width: 150px;
+   
+}
+#box2{
+    background-color: RGBA(0,255,0,0.5) ;
+    height: 150px;
+    width: 150px;
+   
+}
+#box3{
+    background-color: RGBA(0,0,255,0.5) ;
+    height: 150px;
+    width: 150px;
+}
+#footer{
+    background-color: black;
+    text-align: center;
+}

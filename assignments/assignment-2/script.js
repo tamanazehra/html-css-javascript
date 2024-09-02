@@ -1,4 +1,4 @@
-// Wait for the DOM to fully load before executing the script
+
 document.addEventListener('DOMContentLoaded', function() {
     const showButton = document.getElementById('showButton');
     const daysList = document.getElementById('daysList');
@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to show the days of the week
     function showDays() {
-        // Populate the list with days of the week
+    
         daysOfWeek.forEach(day => {
             const listItem = document.createElement('li');
             listItem.textContent = day;

@@ -6,9 +6,15 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to add a new row to the table
     function addUser() {
         // Get values from the input fields
-        const name = document.getElementById('name').value;
-        const age = document.getElementById('age').value;
-        const phone = document.getElementById('phone').value;
+        const name = document.getElementById('name').value.trim();
+        const age = document.getElementById('age').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+
+        //  If any field is empty, do not add to the table
+        if (name === '' || age === '' || phone === '') {
+            alert('Please fill in all fields before adding.');
+            return;
+        }
 
         // Create a new row and cells
         const newRow = document.createElement('tr');

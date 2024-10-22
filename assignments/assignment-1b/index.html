@@ -1,0 +1,46 @@
+<!-- Creating a webpage that will have :
+    HTML page with text boxes that will allow user to enter name, age, phone number
+    HTML page with  add button that will add the name, age, phone number to the table on the HTML page
+    User should be able to add new enries that will keep on adding to the table on the HTML page
+    When a user clicks on a name cell in the table, the corresponding data (name, age, and phone number)
+    is filled into the input text boxes.  -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>User Information</h1>
+    <form>
+        Name: <input type="text" id="name"><br>
+        Age: <input type="text" id="age"><br>
+        Phone Number: <input type="text" id="phone"><br>
+        <button type="button" onclick="addUser()">Add </button>
+    </form>
+    
+
+    <h2>Users List</h2>
+    <table id="userTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text"  id="userName" placeholder="Enter your username">
+    <button onclick="getRepo()">GET REPOS</button>
+
+    <div id="div">
+
+    </div>
+
+    <script>
+
+    function getRepo(){
+      var userName = document.getElementById("userName").value;  
+
+        fetch(`https://api.github.com/users/${userName}/repos`)
+        .then(response => response.json())
+        .then(data => {
+            var list = document.getElementById("div")
+            list.innerHTML = ""
+
+          data.forEach(repo => {
+            var repoName = document.createElement("p")
+            repoName.innerHTML = `<a href = "${repo.html_url}">${repo.name}</a>`
+
+            list.appendChild(repoName);
+
+          });  
+            
+        })
+
+
+
+
+    }
+   </script>
+</body>
+</html>

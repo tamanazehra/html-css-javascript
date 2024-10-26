@@ -1,0 +1,30 @@
+        <!-- advice api -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="getAdvice()">Get Advice</button>
+    <div id="advice">
+
+    </div>
+
+
+
+    <script>
+        function getAdvice(){
+            fetch("https://api.adviceslip.com/advice")
+            .then(response => response.json())
+            .then(data =>{
+                document.getElementById("advice").innerHTML = data.slip.advice
+            })
+        }
+    </script>
+</body>
+</html>

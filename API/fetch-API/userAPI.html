@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="getData()">Get Data</button> <br><br>
+    
+    <table border="1" width="100%">
+        <thead>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+        </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+    </table>
+
+
+    <script>
+        function getData(){
+            fetch('https://jsonplaceholder.typicode.com/users')
+            .then(random => random.json())
+            .then(data => {
+                var tableBody = document.getElementById("tableBody")
+                tableBody.innerHTML = ""
+
+            data.forEach(user => {
+                var row = document.createElement("tr");
+
+                var idCell = document.createElement("td");
+                var nameCell = document.createElement("td");
+                var emailCell = document.createElement("td");
+
+                idCell.innerHTML = user.id;
+                nameCell.innerHTML = user.name;
+                emailCell.innerHTML = user.email;
+
+                row.appendChild(idCell);
+                row.appendChild(nameCell);
+                row.appendChild(emailCell);
+
+                tableBody.appendChild(row)
+
+            });    
+                
+            })         
+        }
+    </script>
+</body>
+</html>

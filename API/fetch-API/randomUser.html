@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <button onclick="fetchData()">fetch user</button> 
+   <div id="div">
+     <h1 id="userName"></h1>
+     <img src="" id="image" alt="user profile picture" style="display: none;">
+     <p id="emailId"></p>
+   </div>
+
+   <script>
+        function fetchData(){
+            
+            var userImage = document.getElementById("image");
+            var userName = document.getElementById("userName");
+            var userId = document.getElementById("emailId");
+        
+
+             fetch('https://randomuser.me/api/')
+             .then(response => response.json())
+             .then (data => {
+                var user = data.results[0]
+
+                userImage.src = user.picture.large;
+                userName.innerHTML =  user.name.first;
+                userId.innerHTML = user.email;
+
+                userImage.style.display = "block";
+             })
+
+        }
+
+   </script>
+</body>
+</html>

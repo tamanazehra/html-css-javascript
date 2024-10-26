@@ -1,0 +1,37 @@
+<!-- 
+ 861, 864, 865, 877
+ -->
+                <!-- displaying characters  -->
+
+ <!DOCTYPE html>
+ <html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API</title>
+</head>
+<body>
+    <input type="text" id="charId" placeholder="Character - ID">
+    <button onclick="getData()">GET DATA</button> <br>
+    <img src="" alt="Character img" id="charImg" style="display: none;">
+    <p id="charName"></p>
+
+    <script>
+        function getData(){
+            const charId = document.getElementById("charId").value;
+
+            fetch(`https://narutodb.xyz/api/character/${charId}`)
+                .then(response => response.json())
+                .then(data => {
+                    const imgElement = document.getElementById("charImg");
+                    imgElement.src = data.images;
+                    imgElement.style.display = "block";
+                    
+                    const pElement = document.getElementById("charName");
+                    pElement.innerHTML =  data.name;
+                })
+                .catch(error => console.log(error));
+        }
+    </script>
+</body>
+</html>

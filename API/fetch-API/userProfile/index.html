@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <button onclick="getData()">GET USER</button>
+    <img src="" alt="User Profile Picture" id="user-img" style="display: none;">
+
+    <div id="data" style="display: none;">
+        <p id="user-name"> </p>
+        <p id="user-email"> </p>
+        <p id="user-gender"> </p>
+        <p id="user-age"> </p>
+        <p id="user-contact"> </p>
+        <p id="user-address"> </p>
+    </div>
+
+    <script>
+        function getData(){
+
+            var userImg = document.getElementById("user-img")
+            var userName = document.getElementById("user-name")
+            var userEmail = document.getElementById("user-email")
+            var userGender = document.getElementById("user-gender")
+            var userAge = document.getElementById("user-age")
+            var userContact = document.getElementById("user-contact")
+            var userAddress = document.getElementById("user-address")
+
+            fetch("https://randomuser.me/api/")
+            .then(response => response.json())
+            .then(data => {
+                var user = data.results[0]
+
+                userImg.src = user.picture.large
+                userImg.style.display = "block"
+
+                userName.innerHTML = "FULL NAME - " + user.name.title + " " + user.name.first + " " + user.name.last
+                userEmail.innerHTML = "EMAIL-ID - " + user.email
+                userGender.innerHTML = "GENDER - " + user.gender 
+                userAge.innerHTML = "AGE - " + user.dob.age
+                userContact.innerHTML = "CONTACT - " + user.cell
+                userAddress.innerHTML ="ADDRESS - " + user.location.state + " , " + user.location.country
+
+                document.getElementById("data").style.display = "block"
+            })
+            
+        }
+
+    </script>
+</body>
+</html>

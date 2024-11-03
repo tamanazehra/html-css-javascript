@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <input type="text" placeholder="       ENTER USER ID" id="text-box">
+    <button onclick="getData()">GET USER</button>
+    <img src="" alt="User Profile Picture" id="user-img" style="display: none;">
+
+    <div id="data" style="display: none;">
+        <p id="user-name"> </p>
+        <p id="user-email"> </p>
+        <p id="user-gender"> </p>
+        <p id="user-age"> </p>
+        <p id="user-contact"> </p>
+        <p id="user-address"> </p>
+    </div>
+
+    <script>
+        function getData(){
+            var textBox = document.getElementById("text-box").value
+           
+            if (textBox === "") {
+                alert("Please enter a User ID");
+                return;
+            }
+
+            fetch(`https://randomuser.me/api/?seed=${textBox}`)
+            .then(response => response.json())
+            .then(data => {
+
+                var user = data.results[0];
+
+                var userImg = document.getElementById("user-img")
+                userImg.src = user.picture.large
+                userImg.style.display = "block"
+                
+                var userName = document.getElementById("user-name")
+                userName.innerHTML = "FULL NAME - " + user.name.title + " " + user.name.first + " " + user.name.last
+
+                var userEmail = document.getElementById("user-email")
+                userEmail.innerHTML = "EMAIL-ID - " + user.email
+
+                var userGender = document.getElementById("user-gender")
+                userGender.innerHTML = "GENDER - " + user.gender 
+
+                var userAge = document.getElementById("user-age")
+                userAge.innerHTML = "AGE - " + user.dob.age
+
+                var userContact = document.getElementById("user-contact")
+                userContact.innerHTML = "CONTACT - " + user.cell
+
+                var userAddress = document.getElementById("user-address")
+                userAddress.innerHTML ="ADDRESS - " + user.location.state + " , " + user.location.country
+
+                document.getElementById("data").style.display = "block"
+
+
+            })
+            
+        }
+
+    </script>
+</body>
+</html>
